@@ -1,0 +1,312 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Hotels NG Old Homepage Clone by Precious Iriaevho</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name='description' content='' />
+
+    <meta name='keywords' content='' />
+
+    <meta name='author' content='Precious Iriaevho' />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+</head>
+
+<style>
+    * {
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+        font-family: 'Lato', sans-serif;
+    }
+    
+    .container {
+        height: 800px;
+        background-image: url('hotel.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    .slide {
+        height: 500px;
+        background-image: url('hotel.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    .overlay {
+        height: 500px;
+        background: rgba(0, 0, 0, 0.5);
+        position: relative;
+    }
+    
+    .header {
+        height: 50px;
+        background-color: #00AEFF;
+        color: black;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .logo {
+        width: 20%;
+        margin-left: 30px;
+    }
+    
+    .info-side {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .slide {
+        text-align: center;
+    }
+    
+    .slide h1 {
+        color: white;
+        font-size: 40px;
+    }
+    
+    .slide h2 {
+        color: white;
+        margin: 10px 0 10px 0;
+        font-size: 25px;
+        font-weight: 400;
+    }
+    
+    .search-area {
+        position: relative;
+        top: 150px;
+    }
+    
+    .suggest {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        bottom: 0px;
+        background: rgba(0, 0, 0, 0.6);
+        height: 100px;
+    }
+    
+    .skype,
+    .num,
+    .curr,
+    .sign-up,
+    .login {
+        margin-right: 20px;
+        padding: 10px;
+        border-right: 1px solid;
+    }
+    
+    select {
+        padding: 10px;
+        border: none;
+        font-size: 16px;
+        color: black;
+        outline: none;
+        background-color: #00AEFF;
+        color: white;
+    }
+    
+    .info-side img {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .num {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .curr {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .skype {
+        display: flex;
+    }
+    
+    .sign-up,
+    .login {
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        outline: none;
+    }
+    
+    .sign-up:hover,
+    .login:hover {
+        background-color: black;
+        color: white;
+    }
+    
+    .s-field [type='search'] {
+        height: 40px;
+        width: 400px;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        border-radius: 5px;
+        padding-left: 5px;
+    }
+    
+    .s-field [type='date'] {
+        height: 40px;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        border-radius: 5px;
+        padding-left: 5px;
+    }
+    
+    .s-field [type='submit'] {
+        height: 40px;
+        background-color: #00AEFF;
+        width: 150px;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .s-field [type='submit']:hover {
+        background-color: black;
+    }
+    
+    .suggesty1,
+    .suggesty2,
+    .suggesty3 {
+        text-align: left;
+        color: white;
+        width: 20%;
+    }
+    
+    .suggesty1 h3 {
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    
+    .suggesty1 a,
+    .suggesty2 a,
+    .suggesty3 a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .suggesty1 .linky,
+    .suggesty2 .linky,
+    .suggesty3 .linky {
+        text-decoration: none;
+        color: white;
+        border: 1px solid white;
+        border-radius: 3px;
+        padding: 10px 70px 10px 2px;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <!--            Header starts-->
+        <div class="header">
+            <div class="logo">
+                <img src="hotellogo.png" alt="">
+            </div>
+            <div class="info-side">
+                <div class='skype'><img src="facebook.png" alt=""></div>
+                <div class='num'><img src="facebook.png" alt="">
+
+                    <select name="" id="">
+                        <option value="">+2347063920034</option>
+                        <option value="">+2347063920034</option>
+                        <option value="">+2347063920034</option>
+                    </select>
+                </div>
+                <div class='curr'><img src="facebook.png" alt="">
+
+                    <select name="" id="">
+                        <option value="">Naira</option>
+                        <option value="">Dollar</option>
+                        <option value="">Pounds</option>
+                    </select>
+                </div>
+
+                <button class='sign-up'>Sign Up</button>
+
+                <button class='login'>Log In</button>
+
+            </div>
+        </div>
+
+        <!--            Header End-->
+        <!--      slide satrts-->
+
+        <div class="slide">
+            <div class="overlay">
+
+
+                <div class="search-area">
+                    <h1>Find and Book Hotels in Nigeria</h1>
+                    <h2>Search Through 9,756 Hotels in Nigeria</h2>
+
+                    <div class="s-field">
+                        <input type="search" placeholder="Search for a city or a perticular hotel">
+                        <input type="date" placeholder="Check In">
+                        <input type="date" placeholder="Check Out">
+                        <input type="submit" value="Find Hotels">
+                    </div>
+                </div>
+
+                <div class="suggest">
+                    <div class="suggesty1">
+                        <h3>Suggested Destinations</h3>
+                        <div class="linky">
+                            <a href="">Cross River Hotels <br>2176 Hotels</a>
+                        </div>
+                    </div>
+
+                    <div class="suggesty2">
+
+                        <div class="linky">
+                            <a href="">Cross River Hotels <br>2176 Hotels</a>
+                        </div>
+                    </div>
+
+                    <div class="suggesty3">
+
+                        <div class="linky">
+                            <a href="">Cross River Hotels <br>2176 Hotels</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!--    slide ends-->
+
+    </div>
+
+
+
+
+</body>
+
+</html>
